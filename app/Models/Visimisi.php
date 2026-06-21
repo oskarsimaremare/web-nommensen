@@ -11,4 +11,8 @@ class Visimisi extends Model
         'misi',
         'image',
     ];
+
+    protected $casts = [
+        'image' => 'array',
+    ];
 }
