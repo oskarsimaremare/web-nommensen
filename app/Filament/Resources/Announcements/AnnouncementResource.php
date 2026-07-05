@@ -5,21 +5,22 @@ namespace App\Filament\Resources\Announcements;
 use App\Filament\Resources\Announcements\Pages\CreateAnnouncement;
 use App\Filament\Resources\Announcements\Pages\EditAnnouncement;
 use App\Filament\Resources\Announcements\Pages\ListAnnouncements;
-use App\Filament\Resources\Announcements\Tables\AnnouncementsTable;
 use App\Models\Announcement;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
 use UnitEnum;
 use Illuminate\Support\Str;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Hidden;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Actions\DeleteAction;
-use Filament\Tables\Actions\BulkActionGroup;
+
 
 class AnnouncementResource extends Resource
 {
@@ -36,10 +37,10 @@ class AnnouncementResource extends Resource
     protected static string|UnitEnum|null $navigationGroup = 'Publikasi';
     protected static ?int $navigationSort = 8; // ← Urutan di menu
 
-    public static function schema(schema $form): schema
+    public static function form(schema $schema): schema
 {
-    return $form
-        ->schema([
+    return $schema
+        ->components([
             TextInput::make('title')
                 ->label('Judul Pengumuman')
                 ->required()
