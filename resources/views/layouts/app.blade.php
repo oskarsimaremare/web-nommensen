@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'B University') — Universitas Pilihan Anda</title>
-    <meta name="description" content="@yield('meta_description', 'Website resmi Universitas B University.')">
+    <title>@yield('title', 'Universitas Nommensen') — Universitas Pilihan Anda</title>
+    <meta name="description" content="@yield('meta_description', 'Website resmi Universitas Nommensen.')">
 
     {{-- Tailwind CSS via Vite --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])

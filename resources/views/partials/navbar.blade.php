@@ -6,10 +6,10 @@
             <a href="{{ route('home') }}" class="flex items-center gap-3">
                 @isset($footer)
                     <img src="{{ asset('storage/' . $footer->image) }}"
-                         alt="Logo B University"
+                         alt="Logo Universitas Nommensen"
                          class="h-9 w-9 object-contain">
                 @endisset
-                <span class="text-lg font-bold text-slate-900">B University</span>
+                <span class="text-lg font-bold text-slate-900">Universitas Nommensen</span>
             </a>
 
             {{-- MENU DESKTOP --}}

@@ -8,7 +8,7 @@
                      alt="Logo B University"
                      class="h-12 w-auto mb-4 brightness-0 invert">
             @endisset
-            <h3 class="text-white text-lg font-bold mb-3">B University</h3>
+            <h3 class="text-white text-lg font-bold mb-3">Universitas Nommensen</h3>
             <p class="text-sm leading-relaxed">
                 {{ $footer->alamat ?? 'Alamat universitas akan ditampilkan di sini.' }}
             </p>
@@ -61,7 +61,7 @@
     {{-- COPYRIGHT --}}
     <div class="border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-xs text-slate-400">
-            © {{ date('Y') }} B University. Seluruh hak cipta dilindungi.
+            © {{ date('Y') }} Universitas Nommensen. Seluruh hak cipta dilindungi.
         </div>
     </div>
 </footer>
